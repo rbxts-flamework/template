@@ -1,30 +1,29 @@
 import { Networking } from "@flamework/networking";
 
-/*
-
-	Server Recievers
-	Network messages that can be sent from clients and recieved from the server
-
-*/
+/**
+ * Server Events
+ * @description Client -> Server events
+ */
 interface ServerEvents {}
 
+/**
+ * Server Functions
+ * @description Client -> Server functions
+ */
 interface ServerFunctions {}
 
-/*
-
-	Client Recievers
-	Network messages that will be sent from the server and recieved by client(s)
-
-*/
+/**
+ * Client Events
+ * @description Server -> Client events
+ */
 interface ClientEvents {}
 
+/**
+ * Client Functions
+ * @description Server -> Client functions
+ */
 interface ClientFunctions {}
 
-/*
-
-	Initialization
-	Creates and links the networking Remotes in ReplicatedStorage.
-
-*/
+// Network:
 export const GlobalEvents = Networking.createEvent<ServerEvents, ClientEvents>();
 export const GlobalFunctions = Networking.createFunction<ServerFunctions, ClientFunctions>();
