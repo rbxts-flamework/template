@@ -1,15 +1,13 @@
 import { Networking } from "@flamework/networking";
 
-// Client -> Server events
+// Client -> Server
 interface ServerEvents {}
 
-// Client -> Server functions
 interface ServerFunctions {}
 
-// Server -> Client events
+// Server -> Client
 interface ClientEvents {}
 
-// Server -> Client functions
 interface ClientFunctions {}
 
 export const GlobalEvents = Networking.createEvent<ServerEvents, ClientEvents>();
