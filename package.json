@@ -20,13 +20,13 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-roblox-ts": "^0.0.30",
     "prettier": "^2.3.2",
-    "rbxts-transformer-flamework": "^1.0.0",
-    "roblox-ts": "^2.2.0",
+    "rbxts-transformer-flamework": "^1.1.1",
+    "roblox-ts": "^2.3.0",
     "typescript": "~5.2.2"
   },
   "dependencies": {
-    "@flamework/components": "^1.0.0",
-    "@flamework/core": "^1.0.0",
-    "@flamework/networking": "^1.0.0"
+    "@flamework/components": "^1.1.1",
+    "@flamework/core": "^1.1.1",
+    "@flamework/networking": "^1.1.1"
   }
 }
